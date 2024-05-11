@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShopListActivity">
+
+        <ImageView
+            android:id="@+id/first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/first"
+            />
+
+        <ImageView
+            android:id="@+id/second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/first"
+            app:srcCompat="@drawable/second"
+            />
+
+        <ImageView
+            android:id="@+id/third"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/second"
+            app:srcCompat="@drawable/third"
+            />
+
+<!--        <ImageView-->
+<!--            android:id="@+id/fourth"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="@dimen/default_margin"-->
+<!--            android:layout_marginStart="@dimen/default_margin"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/third"-->
+<!--            app:srcCompat="@drawable/fourth"-->
+<!--            />-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@+id/first"
+            app:layout_constraintTop_toTopOf="@+id/first"
+            android:text="@string/product_description"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@+id/second"
+            app:layout_constraintTop_toTopOf="@+id/second"
+            android:text="@string/product_description"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@+id/third"
+            app:layout_constraintTop_toTopOf="@+id/third"
+            android:text="@string/product_description"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="10dp"
+            />
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:layout_constraintLeft_toRightOf="@+id/fourth"-->
+<!--            app:layout_constraintTop_toTopOf="@+id/fourth"-->
+<!--            android:text="@string/product_description"-->
+<!--            android:layout_marginTop="40dp"-->
+<!--            android:layout_marginStart="@dimen/default_margin"-->
+<!--            />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
